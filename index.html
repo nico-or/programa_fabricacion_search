@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Programa Fabricacion</h1>
+
+    <form id="inputForm">
+      <label for="inputFile">Programa Fabricación: </label>
+      <input
+        type="file"
+        name="inputFile"
+        id="inputFile"
+        accept=".xls, .xlsx, .xlsm"
+      />
+      <button type="submit">Upload</button>
+    </form>
+
+    <form id="searchForm">
+      <label for="inputEmail4" class="form-label">Obra</label>
+      <input type="text" id="obraInput" />
+      <label for="inputPassword4" class="form-label">Cliente</label>
+      <input type="text" id="clienteInput" />
+      <button type="submit">Search</button>
+    </form>
+
+    <table id="dataTable"></table>
+    <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
